@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="project1.css">
+
+</head>
+<body>
+
+    <!-- navigation bar -->
+    <nav>
+        <div class="nav_logo">
+            <a href="index.html" onclick="showPage('work')">Sreya</a>
+        </div>
+        <div class="nav_cont">
+            <a href="index.html#work" class="work-nav" style="padding-left:2%;">Work</a>
+            <a href="#" onclick="showPage('about')" style="padding-left:2%;">About</a>
+            <a href="https://drive.google.com/file/d/1Jah0etbDY02YqsyEBk9gfyTPM5FA0s-P/view?usp=sharing" target="_blank" rel="noopener noreferrer" onclick="showPage('contact')" style="padding-left:2%;">Resume</a>
+        </div>
+    </nav>
+
+    <!-- <div class="intro"> 
+        <img src="images/project1/cover.png" alt="Cover image" class="image">
+    </div>-->
+
+    <div class="sidenav">
+        <a href="#" onclick="scrollToSection('sec-1', event)" id="link-sec-1">Project Overview</a>
+        <a href="#" onclick="scrollToSection('sec-2', event)" id="link-sec-2">Research</a>
+        <a href="#" onclick="scrollToSection('sec-3', event)" id="link-sec-3">Design</a>
+        <a href="#" onclick="scrollToSection('sec-5', event)" id="link-sec-5">Going Forward</a>
+    </div>
+
+    <div class="project1">
+        <div class="intro"> 
+            <img src="images/project1/Cover image_placement.png" alt="Cover image" class="image" style="width: 100%;">
+        </div>
+
+        <!-- SECTION 1: Project Overview -->
+        <section id="sec-1" class="page">
+            <h1 style="font-size: 30px; font-weight: 550;" >Project Overview</h1>
+
+            <div class="sec-1-1">
+                <h2>Problem Statement</h2>
+                <a>Navigating the intricate process of college placement is a challenge for both students and employers. 
+                    To simplify this journey, the goal was to create a comprehensive College Placement Website. The website 
+                    aimed to streamline the placement process and enhance the overall user experience.</a>
+            </div>
+
+            <div class="sec-1-2">
+                <h2>Background</h2>
+                <a>Traditional placement methods were often cumbersome, involving paperwork and lengthy procedures.</a>
+            </div>
+
+            <div class="sec-1-3">
+                <h2>Objectives</h2>
+                <a><li>Student Registration</li> 
+                    <li>Interactive Chat Support</li>
+                    <li>Secure Login Page</li>
+                    <li>Efficiency and Accessibility</li>
+            </div>
+        </section>
+
+
+        <!-- SECTION 2: Research -->
+        <section id="sec-2" class="page">
+            <h1 style="font-size: 30px; font-weight: 550;">Research</h1>
+
+            <div class="sec-2-1">
+                <h2>User Research: Summary</h2>
+                <a>A survey was conducted targeting 3rd and 4th year students, identifying essential features such as real-time notifications, automatic CV builder, and a chatbot for resolving queries.</a>
+            </div>
+
+            <div class="sec-2-2">Scenarios</h2>
+                <img src="" alt="Scenarios" class="image">
+            </div>
+
+            <div class="sec-2-3">
+                <h2>User Personas</h2>
+                <a>Personas were created, representing the end-users – students</a>
+                <img src="images/project1/Group 19.png" alt="Persona" class="image">
+            </div>
+        </section>
+
+        <!-- SECTION 3: Design -->
+        <section id="sec-3" class="page">
+            <h1 style="font-size: 30px; font-weight: 550;">Design</h1>
+
+            <div class="sec-3-1">
+                <h2>Paper Wireframes</h2>
+                <a>Initial design focused on basic layout and structure.</a>
+                <img src="images/project1/paperwireframe.png" alt="Paper Wireframes" class="image">
+            </div>
+
+            <div class="sec-3-2">
+                <h2>Digital Wireframes</h2>
+                <a>Iterative designs for homepage, login, student dashboard, chatbot, CV builder, and document verification.</a>
+                <img src="images/project1/Group 18-3.png" alt="Digital Wireframes" class="image">
+            </div>
+
+            <div class="sec-3-3">
+                <h2>high Fidelity Prototype</h2>
+                <a></a>
+                <img src="" alt="Final designs" class="image">
+            </div>
+        </section>
+
+        <!-- SECTION 5: Going Forward -->
+        <section id="sec-5" class="page">
+            <h1 style="font-size: 30px; font-weight: 550;">Going Forward</h1>
+
+            <div class="sec-5-1">
+                <h2>Next Steps</h2>
+                <img src="" alt="going Forward" class="image" style="width: 80%;">
+                <br><br><br><br><br><br><br>
+            </div>
+        </section>
+
+        <div class="image-container" onclick="scrollToTop()" style="position: fixed; bottom: 2%; right: 1.5%; width:3%;">
+            <img src="images/scrollup1.png" alt="Scroll Up" class="hover-image" onmouseover="hoverImageup(this)" onmouseout="unhoverImageup(this)">
+        </div>
+
+        <script>
+            function scrollToSection(section, event) {
+                // Prevent the default behavior of the anchor link
+                event.preventDefault();
+    
+                // Find the section element
+                const sectionElement = document.getElementById(section);
+    
+                // Scroll to the section
+                if (sectionElement) {
+                    sectionElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            }
+
+            // Add an event listener for scroll events
+            window.addEventListener('scroll', function () {
+                // Get the current scroll position
+                const scrollPosition = window.scrollY;
+
+                // Check which section is currently in view
+                const sections = document.querySelectorAll('.page');
+                sections.forEach(function (section) {
+                    const sectionTop = section.offsetTop;
+                    const sectionBottom = sectionTop + section.clientHeight;
+
+                    // Update the active class based on scroll position
+                    const link = document.getElementById('link-' + section.id);
+                    if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+                        link.classList.add('active');
+                    } else {
+                        link.classList.remove('active');
+                    }
+                });
+            });
+
+            function hoverImageup(img) {
+                img.src = "images/scrollup2.png"; // Replace with the path to your second image
+            }
+
+        function unhoverImageup(img) {
+                img.src = "images/scrollup1.png"; // Replace with the path to your first image
+            }
+
+            // Scroll-up button functionality
+            function scrollToTop() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            }
+        </script>
+
+    </div>
+</body>    
+</html>
