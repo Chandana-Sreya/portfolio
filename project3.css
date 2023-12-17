@@ -49,10 +49,6 @@ nav {
     margin-right: 5%;
 }
 
-nav a:hover {
-    color: #2e5b29;
-}
-
 .image-container {
     width: 4%; 
     margin-left: auto;
