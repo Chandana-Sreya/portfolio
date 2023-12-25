@@ -110,4 +110,14 @@ nav {
     transform: scale(0.95);
 }
 
+.social_icons {
+    width: 40px; 
+    height:auto; 
+    padding-right: 1.5%;
+    padding-left: 1.5%;
+}
 
+.social_icons:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
