@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="about.css">
+
+</head>
+<body>
+
+    <!-- navigation bar -->
+    <nav>
+        <div class="nav_logo">
+            <a href="index.html" onclick="showPage('work')">Sreya</a>
+        </div>
+        <div class="nav_cont">
+            <a href="index.html#work" class="work-nav" onclick="scrollToSection('work', 1000)" style="padding-left:2%;">Work</a>
+            <a href="art.html" onclick="showPage('about')" style="padding-left:2%;">Art</a>
+            <a href="about.html" onclick="showPage('about')" style="padding-left:2%;">About</a>
+            <a href="Resume_Sreya Srungaram.pdf" target="_blank" rel="noopener noreferrer" style="padding-left:2%;">Resume</a>
+        </div>
+    </nav>
+
+    <!-- About me -->
+    <div class="intro">
+        <div style="width: 40%; padding-left: 10%; margin-left: 5%;"> 
+            <img src="images/about/Group 4.png" width="70%">
+        </div>
+        <div style="width: 60%; padding-right: 10%; margin-right: 5%; text-align: justify; padding-top: 1%;"> 
+            <a style="font-size: 50px; font-weight: bolder; color:#000000d2;">ABOUT ME</a>
+            <div style="padding-top: 5%;">
+                <a style="font-size: 18px; line-height: 1.7;">
+                    <p>I am Sreya, an aspiring Product Designer with a mission to create meaningful and delightful digital experiences. 
+                        I believe in the power of user-centric design to transform the way people interact with technology.</p>
+                </a>
+            </div>
+        </div>
+    </div>
+       
+    <!-- about -->
+    <div class="aboutme" align="left" style="width: 60%; padding-left: 10%;">
+        <div style="padding-left: 10%; padding-right: 10%;"> 
+            <a style="font-size: 40px; font-weight: bolder; color:#000000d2;">The Designer Behind the Screen</a>
+            <div style="padding-top: 5%; text-align: justify;">
+                <a style="font-size: 18px; line-height: 1.7;">
+                    <p>With a background in Computer Science, I bring a unique blend of skills that combine creativity, empathy, and
+                     technical expertise. My journey into UX design started with a fascination for understanding how users interact with 
+                     technology and a commitment to crafting solutions that not only meet their needs but exceed their expectations.</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- why -->
+    <div class="aboutme" align="left" style="width: 60%; padding-left: 30%;">
+        <div style="padding-left: 10%; padding-right: 10%;"> 
+            <a style="font-size: 40px; font-weight: bolder; color:#000000d2;">Why Product Design?</a>
+            <div style="padding-top: 5%; text-align: justify;">
+                <a style="font-size: 18px; line-height: 1.7;">
+                    <p>Product design, to me, goes beyond creating visually appealing interfaces. It's about understanding the holistic 
+                        journey of a user and ensuring that every interaction contributes to a seamless and delightful experience. 
+                        I thrive on the challenges of balancing aesthetics, functionality, and usability to create products that stand 
+                        out in the digital landscape.</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Social media links -->
+    <div class="social" style="text-align: center; padding-top: 5%;">
+        <hr width="75%" style="border-width: 1px; color: #5f5e5e39; margin-bottom: 3%;">
+        <h2>Let's Connect</h2>
+        <div style="padding-top: 2%;">
+            <a href="mailto: sreyasrungaram@gmail.com" target="_blank" rel="noopener noreferrer"><img src="images/mail_icon.png" class="social_icons"></a>
+            <a href="https://www.linkedin.com/in/sreya3007" target="_blank" rel="noopener noreferrer"><img src="images/linkedin_icon.png" class="social_icons"></a>
+            <a href="https://medium.com/@scsreya44" target="_blank" rel="noopener noreferrer"><img src="images/medium_icon.png" class="social_icons"></a>
+            <a href="https://dribbble.com/scsreya" target="_blank" rel="noopener noreferrer"><img src="images/dribbble_icon.png" class="social_icons"></a>
+        </div>
+
+        <div class="image-container" onclick="scrollToTop()" style="margin-right: 1.5%; margin-bottom: 1.5%; width:3%;">
+            <img src="images/scrollup1.png" alt="Scroll Up" class="hover-image" onmouseover="hoverImageup(this)" onmouseout="unhoverImageup(this)">
+        </div>
+    </div>
+    
+    <script>
+        function hoverImageup(img) {
+            img.src = "images/scrollup2.png"; 
+        }
+
+        function unhoverImageup(img) {
+            img.src = "images/scrollup1.png"; 
+        }
+
+        // Scroll-up button functionality
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+    </script>
+
+
+</body>
+</html>
