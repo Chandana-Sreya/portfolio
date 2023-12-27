@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="art.css">
+
+</head>
+<body>
+
+    <!-- navigation bar -->
+    <nav>
+        <div class="nav_logo">
+            <a href="index.html" onclick="showPage('work')">Sreya</a>
+        </div>
+        <div class="nav_cont">
+            <a href="index.html#work" class="work-nav" onclick="scrollToSection('work', 1000)" style="padding-left:2%;">Work</a>
+            <a href="art.html" onclick="showPage('about')" style="padding-left:2%;">Art</a>
+            <a href="about.html" onclick="showPage('about')" style="padding-left:2%;">About</a>
+            <a href="Resume_Sreya Srungaram.pdf" target="_blank" rel="noopener noreferrer" style="padding-left:2%;">Resume</a>
+        </div>
+    </nav>
+
+    <div style="text-align: center; padding-top: 20%; padding-bottom: 10%;"> 
+        <a style="font-size: 30px;"><b>Beyond my Academics and work, I Like To . . .</b></a>
+    </div>
+
+    <!-- drawings -->
+    <div class="art" align="left">
+        <div style="padding-left: 10%; padding-right: 10%;"> 
+            <a style="font-size: 80px; font-weight: bolder; color:#000000d2;">DRAW</a>
+            <div style="padding-top: 5%;"><img src="images/about/Group 6.png" width="90%"></div>
+        </div>
+    </div>
+
+    <!-- paintings -->
+    <div class="art" align="right">
+        <div style="padding-left: 10%; padding-right: 10%;"> 
+            <a style="font-size: 80px; font-weight: bolder; color:#000000d2;">AND PAINT</a>
+            <div style="padding-top: 5%;"><img src="images/about/Group 3-2.png" width="90%"></div>
+        </div>
+    </div>
+
+    <!-- Social media links -->
+    <div class="social" style="text-align: center; padding-top: 5%;">
+        <hr width="75%" style="border-width: 1px; color: #5f5e5e39; margin-bottom: 3%;">
+        <h2>Let's Connect</h2>
+        <div style="padding-top: 2%;">
+            <a href="mailto: sreyasrungaram@gmail.com" target="_blank" rel="noopener noreferrer"><img src="images/mail_icon.png" class="social_icons"></a>
+            <a href="https://www.linkedin.com/in/sreya3007" target="_blank" rel="noopener noreferrer"><img src="images/linkedin_icon.png" class="social_icons"></a>
+            <a href="https://medium.com/@scsreya44" target="_blank" rel="noopener noreferrer"><img src="images/medium_icon.png" class="social_icons"></a>
+            <a href="https://dribbble.com/scsreya" target="_blank" rel="noopener noreferrer"><img src="images/dribbble_icon.png" class="social_icons"></a>
+        </div>
+
+        <div class="image-container" onclick="scrollToTop()" style="margin-right: 1.5%; margin-bottom: 1.5%; width:3%;">
+            <img src="images/scrollup1.png" alt="Scroll Up" class="hover-image" onmouseover="hoverImageup(this)" onmouseout="unhoverImageup(this)">
+        </div>
+    </div>
+    
+    <script>
+        function hoverImageup(img) {
+            img.src = "images/scrollup2.png"; 
+        }
+
+        function unhoverImageup(img) {
+            img.src = "images/scrollup1.png"; 
+        }
+
+        // Scroll-up button functionality
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+    </script>
+
+
+</body>
+</html>
