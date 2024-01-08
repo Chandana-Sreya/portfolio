@@ -153,4 +153,16 @@ h2 {
     width: 90%;
     padding-top: 3%;
     padding-bottom: 6%;
-  }
+}
+
+.social_icons {
+    width: 40px; 
+    height:auto; 
+    padding-right: 1.5%;
+    padding-left: 1.5%;
+}
+
+.social_icons:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
