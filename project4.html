@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="project4.css">
+
+</head>
+<body>
+
+    <!-- navigation bar -->
+    <nav>
+        <div class="nav_bar">
+            <a href="index.html" onclick="showPage('work')"><img src="images/favicon.ico" style="width:30px;"></a>
+            <a href="index.html#work" class="work-nav" onclick="scrollToSection('work', 1000)" style="padding-left:2%;">Work</a>
+            <a href="art.html" onclick="showPage('about')" style="padding-left:2%;">Art</a>
+            <a href="about.html" onclick="showPage('about')" style="padding-left:2%;">About</a>
+            <a href="Resume_Sreya Srungaram.pdf" target="_blank" rel="noopener noreferrer" style="padding-left:2%;">Resume</a>
+        </div>
+    </nav>
+
+    <div class="sidenav">
+        <a href="#" onclick="scrollToSection('sec-1', event)" id="link-sec-1">Project Overview</a>
+        <a href="#" onclick="scrollToSection('sec-2', event)" id="link-sec-2">Discover</a>
+        <a href="#" onclick="scrollToSection('sec-3', event)" id="link-sec-3">Design</a>
+        <a href="#" onclick="scrollToSection('sec-4', event)" id="link-sec-4">Testing</a>
+        <a href="#" onclick="scrollToSection('sec-5', event)" id="link-sec-5">Going Forward</a>
+    </div>
+
+    <div class="project1">
+        <div class="intro"> 
+            <img src="images/project1/Cover image_placement.png" alt="Cover image" class="image" style="width: 100%;">
+        </div>
+
+        <!-- SECTION 1: Project Overview -->
+        <section id="sec-1" class="page">
+            <h1 style="font-size: 30px; font-weight: 550;" >Project Overview</h1>
+
+            <div class="sec-1-2" style="width: 100%; display:flex;">
+                <div class="sec-1-2-1" style="width: 40%; float: left; padding: 3%; padding-right: 5%;">
+                    <h2>My Role</h2>
+                    <hr width="75%" align="left" style="border-color: #550000; border-width: 1px; margin-bottom: 5%;">
+                    <a>UX Researcher and Designer</a>
+                </div>
+                <div class="sec-1-2-2" style="width: 40%; float: left; padding: 3%; padding-left: 5%;">
+                    <h2>Duration</h2>
+                    <hr width="75%" align="left" style="border-color: #550000; border-width: 1px; margin-bottom: 5%;">
+                    <a>Aug 24 - Oct 24 (6 weeks)</a>
+                </div>
+            </div>
+
+            <div class="sec-1-2" style="width: 100%; display:flex;">
+                <div class="sec-1-2-1" style="width: 40%; float: left; padding: 3%; padding-right: 5%;">
+                    <h2>Team</h2>
+                    <hr width="75%" align="left" style="border-color: #550000; border-width: 1px; margin-bottom: 5%;">
+                    <a>Sreya Srungaram (Myself)</a><br>
+                    <a>Aishwarrya</a><br>
+                    <a>Jeevitha</a><br>
+                    <a>Yugant</a><br>
+                </div>
+                <div class="sec-1-2-2" style="width: 40%; float: left; padding: 3%; padding-left: 5%;">
+                    <h2>Tools Used</h2>
+                    <hr width="75%" align="left" style="border-color: #550000; border-width: 1px; margin-bottom: 5%;">
+                    <a>Figma</a><br>
+                    <a>Miro</a><br>
+                    <a>Google Forms</a><br>
+                    <a>Google Docs</a>
+                </div>
+            </div>           
+
+            <div class="sec-1-2">
+                <h2>Problem Statement</h2>
+                <a>Navigating the intricate process of college placement is a challenge for both students and employers. 
+                    To simplify this journey, the goal was to create a comprehensive College Placement Website. The website 
+                    aimed to streamline the placement process and enhance the overall user experience.</a>
+                <div>
+                    <img src="images/project1/problem.png" alt="problem Statement" class="image" style="width: 100%;">
+                </div>
+            </div>
+        </section>
+
+
+        <!-- SECTION 2: Research -->
+        <section id="sec-2" class="page">
+            <h1 style="font-size: 30px; font-weight: 550;">Research</h1>
+
+            <div class="sec-2-1">
+                <h2>User Research: Summary</h2>
+                <a>A survey was conducted targeting 3rd and 4th year students, identifying essential features such as 
+                    real-time notifications, automatic CV builder, and a chatbot for resolving queries.</a>
+                <a style="line-height: 2;">
+                    <ul style="line-height: 2.5;">
+                        <li>Out of the 24 people, 70% were from final year and 30% were from pre-final year</li>
+                        <li>91.7% found the CV verification process time-consuming and tedious</li>
+                        <li>83.3% felt that these activities could have been done online</li>
+                    </ul>
+                </a>
+                <br>
+                <h2>Responses</h2>
+                <img src="images/project1/graph1.png" alt="graph1" class="image2">
+                <h3>Features</h3>
+                <img src="images/project1/graph2.png" alt="graph2" class="image2">
+                <h3>Suggestions</h3>
+                <img src="images/project1/summary1.png" alt="summary" class="image2">
+            </div>
+        </section>
+
+        <!-- SECTION 3: Define -->
+        <section id="sec-3" class="page">
+            <h1 style="font-size: 30px; font-weight: 550;">Define</h1>
+            <div class="sec-3-1">
+                <h2>User Personas</h2>
+                <a>Using the insights gathered during our research, we created persona for our end user - students </a>
+                <img src="images/project1/Group 19.png" alt="Persona" class="image">
+            </div>
+            <!-- <div class="sec-3-2"> 
+                <h2>StoryBoard</h2>
+                <a>Storyboards were created, representing the end-users – students</a>
+                <img src="" alt="Storyboard" class="image">
+            </div>-->
+        </section>
+
+        <!-- SECTION 4: Design -->
+        <section id="sec-4" class="page">
+            <h1 style="font-size: 30px; font-weight: 550;">Design</h1>
+
+            <div class="sec-4-1">
+                <h2>Paper Wireframes</h2>
+                <a>Initial design focused on basic layout and structure.</a>
+                <img src="images/project1/paperwireframe.png" alt="Paper Wireframes" class="image">
+            </div>
+
+            <div class="sec-4-2">
+                <h2>Digital Wireframes</h2>
+                <a>Iterative designs for homepage, login, student dashboard, chatbot, CV builder, and document verification.</a>
+                <img src="images/project1/Group 18-3.png" alt="Digital Wireframes" class="image">
+            </div>
+
+            <div class="sec-4-3">
+                <h2>high Fidelity Prototype</h2>
+                <img src="images/project1/highfidelity.png" alt="Final designs" class="image2">
+            </div>
+        </section>
+
+        <!-- SECTION 5: Going Forward  -->
+        <section id="sec-5" class="page">
+            <h1 style="font-size: 30px; font-weight: 550;">Going Forward</h1>
+
+            <div class="sec-5-1">
+                <h2>Key Learnings</h2>
+                <a style="line-height: 2;">
+                    <ul style="line-height: 2;">
+                        <li>Prioritizing user preferences and addressing pain points is essential for creating a successful and effective platform.</li>
+                        <li>Conducting thorough user research, including surveys and structured interviews, provides valuable insights into user needs and expectations.</li>
+                    </ul>
+                </a>
+            </div>
+
+            <div class="sec-5-1">
+                <h2>Next Steps</h2>
+                <a style="line-height: 2;">
+                    <ul style="line-height: 2;">
+                        <li><b>Testing and Feedback: </b>Conduct extensive testing with users to gather feedback on the high-fidelity prototype.</li>
+                        <li><b>Admin side: </b>Design the admin side of the placement website</li>
+                        <li><b>Development: </b>To bring the prototype to life, ensuring a seamless transition from design to implementation.</li>
+                    </ul>
+                </a>
+            </div>
+        </section>
+
+        <div class="image-container" onclick="scrollToTop()" style="position: fixed; bottom: 2%; right: 1.5%; width:3%;">
+            <img src="images/scrollup1.png" alt="Scroll Up" class="hover-image" onmouseover="hoverImageup(this)" onmouseout="unhoverImageup(this)">
+        </div>
+
+        <script>
+            function scrollToSection(section, event) {
+                // Prevent the default behavior of the anchor link
+                event.preventDefault();
+    
+                // Find the section element
+                const sectionElement = document.getElementById(section);
+    
+                // Scroll to the section
+                if (sectionElement) {
+                    sectionElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            }
+
+            // Add an event listener for scroll events
+            window.addEventListener('scroll', function () {
+                // Get the current scroll position
+                const scrollPosition = window.scrollY;
+
+                // Check which section is currently in view
+                const sections = document.querySelectorAll('.page');
+                sections.forEach(function (section) {
+                    const sectionTop = section.offsetTop;
+                    const sectionBottom = sectionTop + section.clientHeight;
+
+                    // Update the active class based on scroll position
+                    const link = document.getElementById('link-' + section.id);
+                    if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+                        link.classList.add('active');
+                    } else {
+                        link.classList.remove('active');
+                    }
+                });
+            });
+
+            function hoverImageup(img) {
+                img.src = "images/scrollup2.png"; // Replace with the path to your second image
+            }
+
+        function unhoverImageup(img) {
+                img.src = "images/scrollup1.png"; // Replace with the path to your first image
+            }
+
+            // Scroll-up button functionality
+            function scrollToTop() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            }
+        </script>
+        
+        <hr width="100%" style="border-width: 1px; color: #5f5e5e39; margin-top: 3%;">
+
+    </div>
+
+    <!-- Social media links -->
+    <div class="social" style="text-align: center; padding-top: 2%;">
+        <h2>Let's Connect</h2>
+        <div style="padding-top: 2%;">
+            <a href="mailto: sreyasrungaram@gmail.com" target="_blank" rel="noopener noreferrer"><img src="images/mail_icon.png" class="social_icons"></a>
+            <a href="https://www.linkedin.com/in/sreya3007" target="_blank" rel="noopener noreferrer"><img src="images/linkedin_icon.png" class="social_icons"></a>
+            <a href="https://medium.com/@scsreya44" target="_blank" rel="noopener noreferrer"><img src="images/medium_icon.png" class="social_icons"></a>
+            <a href="https://dribbble.com/scsreya" target="_blank" rel="noopener noreferrer"><img src="images/dribbble_icon.png" class="social_icons"></a>
+        </div>
+    </div>
+</body>    
+</html>
