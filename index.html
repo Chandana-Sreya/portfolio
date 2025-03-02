@@ -35,18 +35,18 @@
 
     <!-- Introduction -->
     <div class="intro">
-        <!-- <div style="width: 50%;"> 
-            <img src="" class="sample" width="50%" style="margin: auto; align-self: center;">
-        </div>-->
         <div>
             <a id="typing-text" style="font-size: 60px; font-weight: 600;"></a><br><br>
-            <div id="subtitle">
-                <ul>
-                    <li>I'm passionate about crafting seamless digital experiences, and I love bringing ideas to life through design.</li>
-                    <li>HCI graduate student at IU Indianapolis</li>
-                    <li>Currently seeking <b>Summer 2025 internships!</b></li>
-                </ul>
-                <a id="cta-button" href="#" onclick="scrollToSection('work', 1000)"">A Peek into My Design World</a>
+            <div id="subtitle" style="display: flex;">
+                <div style="padding-top: 30px; padding-right: 40px; width: 60%;">
+                    <img src="images/sreya.png" alt="Cover image" class="image" style="width: 100%;">
+                </div>
+                <div style="padding-left: 5%; padding-top: 20px;">
+                    <p style="font-size: 22px; font-weight: 400;">An aspiring Product Designer and HCI grad student @ Indiana University, Indianapolis</p>
+                    <p style="font-size: 18px;">I'm passionate about crafting seamless digital experiences, and love bringing ideas to life through design.</p>
+                    <p style="font-size: 18px;">Currently looking for Summer 2025 internships!</p>
+                    <a id="cta-button" href="#" onclick="scrollToSection('work', 1000)">A Peek into My Design World</a>
+                </div>
             </div>
         </div>
     </div>
@@ -56,6 +56,15 @@
         <!-- Selected Work -->
         <div style="text-align: center; margin-bottom: 5%;">
             <a style="font-size: 40px; font-weight: bold; color:#000000d2;">Selected Work</a>
+        </div>
+
+        <div class="project">
+            <a class="image" href="https://www.canva.com/design/DAGgZ3C7ECg/_-M0pUKJSlFJyqpj4br11g/view?utm_content=DAGgZ3C7ECg&utm_campaign=designshare&utm_medium=link&utm_source=viewer" target="_blank" rel="noopener noreferrer"><img src="images/Project5/Library maps.png" class="img1" style="box-shadow: 0px 0px 10px 2px rgba(180, 180, 180, 0.724);" alt="Project-1 cover image"></a>
+            <div style="padding-top: 2%">
+                <a style="font-size: 24px; font-weight: 400;">Improving Library Map Usability | 2024</a>
+                <a style="padding-top:2%;"><img src="images/icons8-open-link-128.png" style="width: 4%;" ></a>
+            </div>
+            <div style="padding-top: 2%;"><a style="font-size: 18px; font-weight: 400; line-height: 1.5;">Redesigned IU Library Maps to improve usability and navigation based on user research.</a></div>
         </div>
 
         <div class="project">
@@ -74,15 +83,6 @@
             <a class="image" href="project3.html"><img src="images/project3/Cover image_Air-Venti.png" class="img1"  alt="Project-3 cover image" style="box-shadow: 0px 0px 10px 2px rgba(180, 180, 180, 0.724);" ></a>
             <div style="padding-top: 2%;"><a style="font-size: 24px; font-weight: 400;">Air-Venti App Redesign | 2022</a></div>
             <div style="padding-top: 2%;"><a style="font-size: 18px; font-weight: 400; line-height: 1.5;">Redesigned The Air-Venti App as part of product design hackathon</a></div>
-        </div>
-
-        <div class="project">
-            <a class="image" href="https://medium.com/@scshreya44/google-pay-logo-redesign-c8ac594bf3a7" target="_blank" rel="noopener noreferrer"><img src="images/Project4/Cover image_googlepay.png" class="img1" style="box-shadow: 0px 0px 10px 2px rgba(180, 180, 180, 0.724);" alt="Project-1 cover image"></a>
-            <div style="padding-top: 2%">
-                <a style="font-size: 24px; font-weight: 400;">Google Pay Logo Redesign | 2021</a>
-                <a style="padding-top:2%;"><img src="images/icons8-open-link-128.png" style="width: 4%;" ></a>
-            </div>
-            <div style="padding-top: 2%;"><a style="font-size: 18px; font-weight: 400; line-height: 1.5;">Redesigned the GooglePay Logo as part of Logo redesign competition</a></div>
         </div>
 
         <!-- <div class="project">
@@ -134,7 +134,7 @@
                     setTimeout(() => {
                         document.getElementById("subtitle").style.opacity = 1;
                         document.getElementById("subtitle").style.transform = "translateY(0)";
-                    }, 300);
+                    });
                 } 
             }
             type();
